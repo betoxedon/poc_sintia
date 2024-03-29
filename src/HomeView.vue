@@ -14,17 +14,9 @@
             </div>
 
             <div
-               class="bg-slate-300 text-slate-800 text-center mt-4 rounded-lg py-1 flex items-center justify-between px-3 gap-x-3">
+               class="bg-slate-300 text-slate-800 text-center mt-4 rounded-lg py-1 flex items-center justify-center px-3 gap-x-3">
                <span class="text-sm text-slate-800">
-                  &copy; 2024 Site Labs. All rights reserved.
-               </span>
-               <span class="leading-none">
-                  <a
-                     class="text-sm link text-info"
-                     href="https://github.com/72fcosta"
-                     target="_blank">
-                     @72fcosta
-                  </a>
+                  &copy; 2024 Poc Sintia
                </span>
             </div>
          </div>
