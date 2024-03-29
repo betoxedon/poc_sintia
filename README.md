@@ -2,7 +2,7 @@
 
 #### Em index.html, antes de ``</body>``
 - Adicionar a tag do script do agente
-- Abaixo da tag do script do agente, adicionar uma tag script 
+- Abaixo da tag do script do agente, adicionar uma tag script com o devido source
 	
 #### Exemplo
 
