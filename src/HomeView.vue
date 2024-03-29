@@ -15,9 +15,7 @@
 
             <div
                class="bg-slate-300 text-slate-800 text-center mt-4 rounded-lg py-1 flex items-center justify-center px-3 gap-x-3">
-               <span class="text-sm text-slate-800">
-                  &copy; 2024 Poc Sintia
-               </span>
+               <span class="text-sm text-slate-800">&copy; 2024 Poc Sintia</span>
             </div>
          </div>
       </main>
