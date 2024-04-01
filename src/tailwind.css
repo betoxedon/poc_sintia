@@ -1,0 +1,194 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+   strong {
+      @apply font-bold;
+   }
+
+   svg {
+      @apply aspect-square h-[24px] shrink-0;
+   }
+
+   img {
+      @apply h-auto w-full bg-cover;
+   }
+
+   input {
+      @apply text-lg font-light maxw:text-xl;
+   }
+
+   ::placeholder {
+      @apply text-lg font-light maxw:text-xl;
+   }
+
+   span {
+      @apply block text-base text-white maxw:text-lg;
+   }
+}
+
+@layer components {
+   .layout {
+      @apply grid h-screen w-screen overflow-x-hidden bg-slate-900 text-white px-3 pt-3 selection:bg-primary-5 selection:text-primary-30;
+   }
+
+   .layout.layout-authenticated {
+      @apply max-h-screen grid-rows-[minmax(0,_1fr)_min-content];
+   }
+
+   .layout.layout-anonymous {
+      @apply max-h-screen grid-rows-[minmax(0,_1fr)_min-content] p-0;
+   }
+
+   .container-inner {
+      @apply mx-auto grid w-full max-w-[1122px] content-start;
+   }
+
+   .main {
+      @apply grid grid-cols-[minmax(290px,_350px)_minmax(396px,_1fr)_minmax(290px,_350px)] grid-rows-1 gap-x-3;
+   }
+
+   .main-inner {
+      @apply grid content-start gap-y-3;
+   }
+
+   .main-top {
+      @apply container grid rounded-lg  py-4;
+   }
+
+   .main-top span {
+      @apply font-poppins text-xl font-bold;
+   }
+
+   .main-core {
+      @apply container grid overflow-y-auto rounded-lg py-4;
+   }
+
+   .main-core .container-inner {
+      @apply content-start;
+   }
+
+   .main-bottom {
+      @apply container grid rounded-lg;
+   }
+
+   .main-bottom .container-inner {
+      @apply grid;
+   }
+
+   /** section */
+   .section-top {
+      @apply col-span-full flex;
+   }
+
+   .section-core {
+      @apply col-span-full grid grid-cols-12 gap-x-3;
+   }
+
+   .section-bottom {
+      @apply col-span-full mt-8 flex items-center justify-center gap-x-3;
+   }
+
+   .section-bottom .btn {
+      @apply shrink-0;
+   }
+
+   /** card */
+   .card {
+      @apply w-full max-w-[600px];
+   }
+
+   .card-top {
+      @apply col-span-full mb-2 flex w-full justify-center text-center text-lg font-bold text-primary-30 lg:justify-normal lg:text-left;
+   }
+
+   .card-core {
+      @apply col-span-full flex flex-col;
+   }
+
+   .card-bottom {
+      @apply col-span-full mt-4 flex w-full justify-center gap-x-2;
+   }
+
+   /** btn */
+   .btn {
+      @apply flex shrink-0 cursor-pointer select-none items-center justify-center gap-x-2 hover:opacity-90;
+   }
+
+   .btn-p {
+      @apply btn-md bg-primary-30;
+   }
+
+   .btn-s {
+      @apply btn-md ring-1 ring-inset ring-onsurface-30  hover:opacity-70;
+   }
+
+   .btn-c {
+      @apply aspect-square rounded-full p-2;
+   }
+
+   .btn-md {
+      @apply rounded-lg px-7 py-3.5;
+   }
+
+   .btn-link {
+      @apply hover:opacity-100;
+   }
+
+   .btn svg {
+      @apply -mt-[3px] pb-[0.5px];
+   }
+
+   .btn-p svg {
+      @apply text-white;
+   }
+
+   .btn span {
+      @apply whitespace-nowrap;
+   }
+
+   .btn-p span {
+      @apply font-medium text-white;
+   }
+
+   .btn-link span,
+   .link {
+      @apply cursor-pointer text-primary-30;
+   }
+
+   .btn-warning {
+      @apply bg-warning;
+   }
+
+   .btn-warning span {
+      @apply text-base font-semibold text-yellow-700;
+   }
+
+   .btn-success {
+      @apply bg-green-50;
+   }
+
+   .btn-success span {
+      @apply text-base font-semibold text-green-700;
+   }
+
+   .btn.btn-disabled {
+      @apply btn-s pointer-events-none select-none bg-white  opacity-50 ring-primary-20 hover:opacity-50;
+   }
+
+   .btn.btn-disabled span {
+      @apply text-onsurface-30;
+   }
+
+   .btn.btn-disabled svg {
+      @apply text-onsurface-30;
+   }
+}
+
+/*. utilities */
+@layer utilities {
+   .position-dialog {
+      @apply fixed left-1/2 top-0 z-40 my-3 w-full max-w-lg -translate-x-1/2 border-2 md:top-1/2 md:my-0 md:-translate-y-1/2;
+   }
+}

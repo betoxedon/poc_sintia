@@ -1,0 +1,49 @@
+{
+   "name": "sintia-labs",
+   "private": true,
+   "version": "1.0.0",
+   "type": "module",
+   "scripts": {
+      "build-only": "vite build",
+      "preview": "vite preview",
+      "build": "run-p type-check \"build-only {@}\" --",
+      "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
+      "format": "prettier --write .",
+      "dev": "vite --open"
+   },
+   "prettier": {
+      "arrowParens": "always",
+      "semi": false,
+      "singleQuote": true,
+      "tabWidth": 3,
+      "bracketSameLine": true,
+      "bracketSpacing": true,
+      "htmlWhitespaceSensitivity": "ignore",
+      "trailingComma": "all",
+      "printWidth": 86,
+      "endOfLine": "lf",
+      "singleAttributePerLine": false,
+      "vueIndentScriptAndStyle": true
+   },
+   "dependencies": {
+      "vue": "^3.3.4"
+   },
+   "devDependencies": {
+      "@tsconfig/node18": "^18.2.2",
+      "@types/node": "^18.18.5",
+      "@vitejs/plugin-vue": "^4.4.0",
+      "@vue/tsconfig": "^0.4.0",
+      "autoprefixer": "^10.4.16",
+      "npm-run-all2": "^6.1.1",
+      "postcss": "^8.4.31",
+      "prettier": "^3.0.3",
+      "prettier-plugin-tailwindcss": "^0.5.6",
+      "tailwindcss": "^3.3.5",
+      "typescript": "~5.2.0",
+      "vite": "^5.0.8",
+      "vue-tsc": "^1.8.19"
+   },
+   "engines": {
+      "node": "20.11.1"
+   }
+}
